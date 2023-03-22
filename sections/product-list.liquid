@@ -1,0 +1,53 @@
+{{ 'product-list.css' | asset_url | stylesheet_tag }}
+
+{% assign products = collections.all.products %}
+
+<section class="product-list">
+  <h2>{{ section.settings.title }}</h2>
+
+  {% if products.size > 0 %}
+    <ul>
+      {% for product in products %}
+        <li>
+          <a href="{{ product.url }}" class="block">
+            <div>
+              {% include 'card',
+                title: product.title,
+                vendor: product.vendor,
+                title_link: product.url,
+                price: product.price,
+                price_compare: product.compare_at_price_max,
+                price_varies: product.price_varies,
+                badge: product.badge,
+                rating: product.rating,
+                featured_image: product.featured_image
+              %}
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No products found.</p>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Product List",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Products"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product List - Default",
+      "category": "Products"
+    }
+  ]
+}
+{% endschema %}
