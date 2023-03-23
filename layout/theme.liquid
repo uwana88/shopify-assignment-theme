@@ -248,6 +248,12 @@
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
+
+      <!--     /add product upsell -->
+      {% if template == 'product' %}
+          {% section 'product-upsell' %}
+      {% endif %}
+
     </main>
 
     {% sections 'footer-group' %}
