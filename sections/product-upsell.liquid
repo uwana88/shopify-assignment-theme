@@ -1,0 +1,62 @@
+{{ 'product.css' | asset_url | stylesheet_tag }}
+
+{% assign products = collections.all.products %}
+
+
+
+{% if section.settings.show_product_upsell_block %}
+<div class="product_up_sell">
+  <h2>{{ section.settings.title }}</h2>
+
+  {% for product_i in collections.all.products limit:section.settings.amount %}
+    {% if product_i.id != product.id %}
+    <div class="product_up_sell_item">
+      <a href="{{ product_i.url }}" class="product_i-image block">
+        <img src="{{ product_i.featured_image | img_url: 'medium' }}" alt="{{ product_i.title }}" />
+      </a>
+      <a href="{{ product_i.url }}" class="product_i-title block">{{ product_i.title }}</a>
+      <span class="product_i-price block">{{ product_i.price | money }}</span>
+    </div>
+    {% endif %}
+  {% endfor %}
+
+  <br class="clear" />
+</div>
+{% endif %}
+
+
+{% schema %}
+{
+  "name": "Upsell block",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Block Title",
+      "default": "Products you might like"
+    },
+    {
+      "type": "number",
+      "id": "amount",
+      "label": "Number of Products",
+      "default": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_upsell_block",
+      "label": "Show product upsell block",
+      "default": true
+    },{
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

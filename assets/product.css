@@ -77,4 +77,37 @@
   .product__image {
     margin-right: 0px;
   }
+
+
+
+  .product_up_sell_item{
+      margin: 0vh 5vw 5vh;
+      width: 100%;
+  }
+}
+
+
+
+
+.product_up_sell{
+    margin: 10vh 0vw;
+    text-align: center;
+}
+
+.product_up_sell_item{
+    margin: 0vh 5vw 5vh;
+    float: left;
+}
+
+.product_up_sell_item a, .product_up_sell_item span{
+  display:block;
+  text-align:center;
+}
+
+.clear{
+    clear: left;
+    clear: right;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
 }
