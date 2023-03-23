@@ -250,6 +250,11 @@
       {{ content_for_layout }}
     </main>
 
+<!--     /add product upsell -->
+    {% if template == 'product' %}
+      {% section 'product-upsell' %}
+    {% endif %}
+
     {% sections 'footer-group' %}
 
     <ul hidden>
