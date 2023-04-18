@@ -2,14 +2,6 @@
 
 {{ 'product-benefits.css' | asset_url | stylesheet_tag }}
 
-{% capture show_section %}{% case template.name %}
-  {% when 'index' %} {{ section.settings.enable_on_homepage }}
-  {% when 'collection' %} {{ section.settings.enable_on_collection_pages }}
-  {% when 'product' %} {{ section.settings.enable_on_product_pages }}
-{% endcase %}{% endcapture %}
-
-
-{% if show_section%}
   <div class="product_benefit">
       <div class="left">
           <div class="item item1">
@@ -54,7 +46,6 @@
       <div class="center" style="background-image: url({{ section.settings.background_image | img_url: '2000x' }}); background-size: cover; background-position: {{ bg_image.focal_point.x }}% {{ bg_image.focal_point.y}}%;">
       </div>
   </div>
-{% endif %}
 
 
 
