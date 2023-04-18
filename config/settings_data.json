@@ -130,8 +130,17 @@
           "background_image": "shopify:\/\/shop_images\/003_Scootch_A9_08944_1.svg",
           "icon_color": "#fac3c8",
           "enable_on_homepage": true,
-          "enable_on_collection_pages": true,
-          "enable_on_product_pages": true
+          "enable_on_collection_pages": false,
+          "enable_on_product_pages": false
+        }
+      },
+      "product-upsell": {
+        "type": "product-upsell",
+        "settings": {
+          "title": "Products you might like",
+          "amount": 4,
+          "show_product_upsell_block": true,
+          "product": ""
         }
       }
     },
