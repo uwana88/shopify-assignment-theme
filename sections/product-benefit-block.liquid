@@ -6,19 +6,19 @@
 <div class="product_benefit">
     <div class="left">
         <div class="item item1">
-            <img src="" alt="">
+            <img src="" alt="" style="background-color:{{ section.settings.icon_color }}">
             <p>
                 Vet & nutritionist <br/> formulated
             </p>
         </div>
         <div class="item item2">
-            <img src="" alt="">
+            <img src="" alt="" style="background-color:{{ section.settings.icon_color }}>
             <p>
                 Plant based 100% <br/> natural ingredients
             </p>
         </div>
         <div class="item item3">
-            <img src="" alt="">
+            <img src="" alt="" style="background-color:{{ section.settings.icon_color }}>
             <p>
                 No fillers & additives, <br/> low fat & calorie
             </p>
@@ -26,19 +26,19 @@
     </div>
     <div class="right">
         <div class="item item1">
-            <img src="" alt="">
+            <img src="" alt="" style="background-color:{{ section.settings.icon_color }}>
             <p>
                 Clinically proven <br/> ingredients
             </p>
         </div>
         <div class="item item2">
-            <img src="" alt="">
+            <img src="" alt="" style="background-color:{{ section.settings.icon_color }}>
             <p>
                 Hypoallergenic, <br/> grain & wheat free
             </p>
         </div>
         <div class="item item3">
-            <img src="" alt="">
+            <img src="" alt="" style="background-color:{{ section.settings.icon_color }}>
             <p>
                 Recyclable <br/> eco-friendly pack
             </p>
@@ -53,7 +53,14 @@
 {% schema %}
 {
   "name": "Benefit block",
-  "settings": []
+  "settings": [
+      {
+        "type": "color",
+        "id": "icon_color",
+        "label": "Icon color",
+        "default": "#ffffff"
+      }
+  ]
 }
 {% endschema %}
 
