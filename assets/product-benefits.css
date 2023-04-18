@@ -230,9 +230,11 @@
 }
 
 .product_benefit .center img{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 456px;
+    height: 456px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 500px;
 }
 
 }
