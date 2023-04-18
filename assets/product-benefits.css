@@ -199,11 +199,16 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    display: inline-block;
     line-height: 24px;
-    text-align: center;
+    display: inline-block;
+    align-items: center;
+    text-align: right;
     letter-spacing: 0.4px;
     color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .product_benefit .right .item img{
