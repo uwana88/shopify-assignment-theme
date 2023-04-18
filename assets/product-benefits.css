@@ -1,17 +1,17 @@
-
-
-
 .product_benefit{
-    width: 1358px;
+    width: 100%;
+    max-width: 1358px;
     height: 560px;
     background-color: #fff;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     position: relative;
-    left: calc(50% - 324px/2 - 509px);
-    top: calc(50% - 505px/2);
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .product_benefit{
+      height: auto;
+      padding-bottom: 60px;
+  }
 }
 
 .product_benefit .left{
@@ -20,12 +20,11 @@
     align-items: flex-start;
     padding: 0px;
     gap: 56px;
-
+    width: 100%;
+    max-width: 400px;
     position: absolute;
-    width: 324px;
-    height: 305px;
-    left: calc(50% - 324px/2 - 429px);
-    top: calc(50% - 305px/2);
+    left: 0;
+    top: 60px;
 }
 
 .product_benefit .left .item{
@@ -34,26 +33,8 @@
     align-items: center;
     padding: 0px;
     gap: 24px;
-    width: 324px;
+    width: 100%;
     height: 64px;
-}
-
-.product_benefit .left .item1{
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.product_benefit .left .item2{
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
-.product_benefit .left .item3{
-    flex: none;
-    order: 2;
-    flex-grow: 0;
 }
 
 .product_benefit .left .item img{
@@ -66,7 +47,7 @@
 }
 
 .product_benefit .left .item p{
-    width: 237px;
+    width: calc(100% - 64px);
     height: 56px;
     font-family: 'Silka';
     font-style: normal;
@@ -77,10 +58,7 @@
     align-items: center;
     letter-spacing: 0.4px;
     color: #000000;
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    margin: 0;
 }
 
 
@@ -90,12 +68,11 @@
     align-items: flex-start;
     padding: 0px;
     gap: 56px;
-
+    width: 100%;
+    max-width: 400px;
     position: absolute;
-    width: 324px;
-    height: 304px;
-    left: calc(50% - 324px/2 + 429px);
-    top: calc(50% - 304px/2);
+    right: 0;
+    top: 60px;
 }
 
 .product_benefit .right .item{
@@ -105,12 +82,12 @@
     align-items: center;
     padding: 0px;
     gap: 24px;
-    width: 324px;
+    width: 100%;
     height: 64px;
 }
 
 .product_benefit .right .item p{
-    width: 236px;
+    width: calc(100% - 64px);
     height: 56px;
     font-family: 'Silka';
     font-style: normal;
@@ -122,10 +99,7 @@
     text-align: right;
     letter-spacing: 0.4px;
     color: #000000;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    margin: 0;
 }
 
 .product_benefit .right .item img{
@@ -139,11 +113,11 @@
 
 
 .product_benefit .center{
-
-    position: absolute;
-    width: 456px;
-    height: 456px;
-    left: calc(50% - 456px/2 - 1px);
-    top: calc(50% - 456px/2);
+    width: 100%;
+    max-width: 456px;
+    height: auto;
+    padding-top: 50%;
+    margin: 0 auto;
+    position: relative;
     border-radius: 500px;
 }
