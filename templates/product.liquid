@@ -17,14 +17,3 @@
   </div>
 
 </div>
-
-{% capture show_section %}{% case template.name %}
-  {% when 'index' %} {{ section.settings.enable_on_homepage }}
-  {% when 'collection' %} {{ section.settings.enable_on_collection_pages }}
-  {% when 'product' %} {{ section.settings.enable_on_product_pages }}
-{% endcase %}{% endcapture %}
-
-{% if show_section == 'true'%}
-  {% section 'product-benefit-block' %}
-  
-{% endif %}
