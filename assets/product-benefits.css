@@ -3,7 +3,14 @@
 .product_benefit{
     width: 1358px;
     height: 560px;
-    background-color: red;
+    background-color: #fff;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+        position: absolute;
+    left: calc(50% - 324px/2 - 509px);
+    top: calc(50% - 505px/2);
 }
 
 .product_benefit .left{
