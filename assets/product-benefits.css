@@ -9,9 +9,19 @@
     gap: 56px;
     background-color: red;
 
-    position: absolute;
     width: 324px;
     height: 305px;
+}
+
+
+.product_benefit .center{
+
+    display: block;
+    width: 456px;
+    height: 456px;
+    left: calc(50% - 456px/2 - 1px);
+    top: calc(50% - 456px/2);
+    border-radius: 500px;
 }
   
 }
