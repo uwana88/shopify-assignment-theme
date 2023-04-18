@@ -61,7 +61,6 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    background-color: red;
     border-radius: 50%;
 }
 
@@ -134,7 +133,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    background-color: red;
+    border-radius: 50%;
 }
 
 
