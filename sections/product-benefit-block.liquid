@@ -44,8 +44,8 @@
             </p>
         </div>
     </div>
-    <div class="center">
-
+    <div class="center" style="background-image: url({{ settings.background_image | asset_url }})">
+  
     </div>
 </div>
 
@@ -54,6 +54,11 @@
 {
   "name": "Benefit block",
   "settings": [
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background image"
+      },
       {
         "type": "color",
         "id": "icon_color",
