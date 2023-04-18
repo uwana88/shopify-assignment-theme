@@ -13,6 +13,16 @@
     height: 305px;
 }
 
+.product_benefit .left .item{
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 324px;
+    height: 64px;
+}
+
 
 .product_benefit .center{
 
