@@ -12,50 +12,50 @@
 {{ template.name }}
 {{ show_section }}
 {% if show_section == 'true' %}
-<div class="product_benefit">
-    <div class="left">
-        <div class="item item1">
-            <img src="{{ 'pb1.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
-            <p>
-                Vet & nutritionist <br/> formulated
-            </p>
-        </div>
-        <div class="item item2">
-            <img src="{{ 'pb2.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
-            <p>
-                Plant based 100% <br/> natural ingredients
-            </p>
-        </div>
-        <div class="item item3">
-            <img src="{{ 'pb3.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
-            <p>
-                No fillers & additives, <br/> low fat & calorie
-            </p>
-        </div>
-    </div>
-    <div class="right">
-        <div class="item item1">
-            <img src="{{ 'pb4.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
-            <p>
-                Clinically proven <br/> ingredients
-            </p>
-        </div>
-        <div class="item item2">
-            <img src="{{ 'pb5.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
-            <p>
-                Hypoallergenic, <br/> grain & wheat free
-            </p>
-        </div>
-        <div class="item item3">
-            <img src="{{ 'pb6.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
-            <p>
-                Recyclable <br/> eco-friendly pack 
-            </p>
-        </div>
-    </div>
-    <div class="center" style="background-image: url({{ section.settings.background_image | img_url: '2000x' }}); background-size: cover; background-position: {{ bg_image.focal_point.x }}% {{ bg_image.focal_point.y}}%;">
-    </div>
-</div>
+  <div class="product_benefit">
+      <div class="left">
+          <div class="item item1">
+              <img src="{{ 'pb1.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
+              <p>
+                  Vet & nutritionist <br/> formulated
+              </p>
+          </div>
+          <div class="item item2">
+              <img src="{{ 'pb2.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
+              <p>
+                  Plant based 100% <br/> natural ingredients
+              </p>
+          </div>
+          <div class="item item3">
+              <img src="{{ 'pb3.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
+              <p>
+                  No fillers & additives, <br/> low fat & calorie
+              </p>
+          </div>
+      </div>
+      <div class="right">
+          <div class="item item1">
+              <img src="{{ 'pb4.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
+              <p>
+                  Clinically proven <br/> ingredients
+              </p>
+          </div>
+          <div class="item item2">
+              <img src="{{ 'pb5.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
+              <p>
+                  Hypoallergenic, <br/> grain & wheat free
+              </p>
+          </div>
+          <div class="item item3">
+              <img src="{{ 'pb6.svg' | asset_url }}" alt="" style="background-color:{{ section.settings.icon_color }}">
+              <p>
+                  Recyclable <br/> eco-friendly pack 
+              </p>
+          </div>
+      </div>
+      <div class="center" style="background-image: url({{ section.settings.background_image | img_url: '2000x' }}); background-size: cover; background-position: {{ bg_image.focal_point.x }}% {{ bg_image.focal_point.y}}%;">
+      </div>
+  </div>
 {% endif %}
 
 
