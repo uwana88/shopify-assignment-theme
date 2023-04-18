@@ -4,10 +4,6 @@
     width: 1358px;
     height: 560px;
     background-color: red;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .product_benefit .left{
