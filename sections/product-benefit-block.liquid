@@ -12,7 +12,6 @@
 {{ template.name }}
 {{ show_section }}
 
-{% if show_section == "true" %}
   <div class="product_benefit">
       <div class="left">
           <div class="item item1">
@@ -57,7 +56,6 @@
       <div class="center" style="background-image: url({{ section.settings.background_image | img_url: '2000x' }}); background-size: cover; background-position: {{ bg_image.focal_point.x }}% {{ bg_image.focal_point.y}}%;">
       </div>
   </div>
-{% endif %}
 
 
 
