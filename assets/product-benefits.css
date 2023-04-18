@@ -119,3 +119,112 @@
     position: relative;
     border-radius: 500px;
 }
+
+
+@media screen and (max-width: 768px) {
+
+  .product_benefit{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+.product_benefit .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.product_benefit .left .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+}
+
+.product_benefit .left .item img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.product_benefit .left .item p{
+    width: 100%;
+    font-family: 'Silka';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #000000;
+}
+
+.product_benefit .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 24px;
+    width: 100%;
+    height: auto;
+}
+
+.product_benefit .right .item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+}
+
+.product_benefit .right .item p{
+    width: 100%;
+    font-family: 'Silka';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #000000;
+}
+
+.product_benefit .right .item img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.product_benefit .center{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.product_benefit .center img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+}
