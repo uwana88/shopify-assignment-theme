@@ -8,6 +8,9 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+        position: relative;
+    left: calc(50% - 324px/2 - 509px);
+    top: calc(50% - 505px/2);
 }
 
 .product_benefit .left{
