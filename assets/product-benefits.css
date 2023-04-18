@@ -2,6 +2,8 @@
 
 @media only screen and (min-width: 0px) and (max-width: 1067px) {
   .product_benefit{
+    width: 1358px;
+    height: 560px;
     background-color: red;
   }
 
