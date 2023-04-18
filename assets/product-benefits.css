@@ -192,23 +192,18 @@
     width: 100%;
     height: auto;
 }
+
 .product_benefit .right .item p{
-    width: 236px;
-    height: 56px;
+    width: 100%;
     font-family: 'Silka';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 16px;
     display: inline-block;
-    align-items: center;
-    text-align: right;
+    line-height: 24px;
+    text-align: center;
     letter-spacing: 0.4px;
     color: #000000;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 }
 
 .product_benefit .right .item img{
