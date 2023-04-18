@@ -8,10 +8,8 @@
   {% when 'product' %} {{ section.settings.enable_on_product_pages }}
 {% endcase %}{% endcapture %}
 
-{{ section.settings.enable_on_homepage }}
-{{ template.name }}
-{{ show_section }}
 
+{% if show_section%}
   <div class="product_benefit">
       <div class="left">
           <div class="item item1">
@@ -56,12 +54,18 @@
       <div class="center" style="background-image: url({{ section.settings.background_image | img_url: '2000x' }}); background-size: cover; background-position: {{ bg_image.focal_point.x }}% {{ bg_image.focal_point.y}}%;">
       </div>
   </div>
+{% endif %}
 
 
 
 {% schema %}
 {
   "name": "Benefit block",
+  "presets": [
+    {
+      "name": "Benefit block"
+    }
+  ],
   "settings": [
       {
         "type": "image_picker",
