@@ -138,7 +138,7 @@
 
 
 .product_benefit .center{
-    background-color: #fac3c8;
+    background-color: {{ settings.icon_color }};
 
     position: absolute;
     width: 456px;
