@@ -1,12 +1,25 @@
 
 
 @media only screen and (min-width: 0px) and (max-width: 1067px) {
-  /* CSS rules for screens with a width between 0 and 467 pixels */
   .product_benefit {
     
-    background-color: red;
   }
+
+  
+
+.product_benefit .center{
+
+    position: absolute;
+    width: 456px;
+    height: 456px;
+    left: calc(50% - 456px/2 - 1px);
+    top: calc(50% - 456px/2);
+    border-radius: 500px;
+    background-color: red;
+  padding:50px;
 }
+}
+
 .product_benefit{
     width: 1358px;
     height: 560px;
