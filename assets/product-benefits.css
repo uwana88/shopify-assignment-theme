@@ -1,38 +1,8 @@
 
 
-@media only screen and (min-width: 0px) and (max-width: 1067px) {
+@media only screen and (min-width: 0px) and (max-width: 700px) {
   
 
-.product_benefit .left{
-    display: block;
-    padding: 0px;
-    gap: 56px;
-    background-color: red;
-
-    width: 100vw;
-    height: 305px;
-}
-
-.product_benefit .left .item{
-    display: block;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 24px;
-    width: 324px;
-    height: 64px;
-}
-
-
-.product_benefit .center{
-
-    display: block;
-    width: 456px;
-    height: 456px;
-    left: calc(50% - 456px/2 - 1px);
-    top: calc(50% - 456px/2);
-    border-radius: 500px;
-}
   
 }
 
