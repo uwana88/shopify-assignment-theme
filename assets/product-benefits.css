@@ -220,21 +220,17 @@
 }
 
 .product_benefit .center{
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 60px;
-}
-
-.product_benefit .center img{
     width: 456px;
     height: 456px;
     margin: 0 auto;
     position: relative;
     border-radius: 500px;
+}
+
+.product_benefit .center img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 }
