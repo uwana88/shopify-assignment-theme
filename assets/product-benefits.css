@@ -130,6 +130,7 @@
     position: relative;
     margin: 0 auto;
     padding: 60px 30px;
+    flex-direction: row;
 }
 
 .product_benefit .left{
@@ -165,6 +166,7 @@
     font-family: 'Silka';
     font-style: normal;
     font-weight: 500;
+    display: inline-block;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -225,7 +227,7 @@
     margin: 0 auto;
     position: relative;
     border-radius: 500px;
-  display:block;
+      display:block;
 }
 
 .product_benefit .center img{
