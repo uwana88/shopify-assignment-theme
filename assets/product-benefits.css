@@ -24,7 +24,7 @@
     position: absolute;
     width: 324px;
     height: 305px;
-    left: calc(50% - 324px/2 - 429px);
+    left: calc(50% - 324px/2 - 229px);
     top: calc(50% - 305px/2);
 }
 
