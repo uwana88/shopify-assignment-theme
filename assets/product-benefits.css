@@ -1,8 +1,8 @@
 
 
 @media only screen and (min-width: 0px) and (max-width: 1067px) {
-  .product_benefit {
-    
+  .product_benefit{
+    background-color: red;
   }
 
   
@@ -16,8 +16,8 @@
     top: calc(50% - 456px/2);
     border-radius: 500px;
     background-color: red;
-  padding:50px;
-}
+    padding:50px;
+  }
 }
 
 .product_benefit{
