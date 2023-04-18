@@ -221,7 +221,7 @@
 
 .product_benefit .center{
     width: 100vw;
-    height: auto;
+    height: 100vw;
     margin: 0 auto;
     position: relative;
     border-radius: 500px;
