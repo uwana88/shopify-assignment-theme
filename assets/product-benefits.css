@@ -5,10 +5,9 @@
 
 .product_benefit .left{
     display: block;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 0px;
     gap: 56px;
+    background-color: red;
 
     position: absolute;
     width: 324px;
