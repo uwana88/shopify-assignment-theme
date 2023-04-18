@@ -220,11 +220,12 @@
 }
 
 .product_benefit .center{
-    width: 100vw;
-    height: 100vw;
+    width: 80vw;
+    height: 80vw;
     margin: 0 auto;
     position: relative;
     border-radius: 500px;
+  display:block;
 }
 
 .product_benefit .center img{
