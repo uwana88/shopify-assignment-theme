@@ -255,7 +255,20 @@
       {% section 'product-upsell' %}
     {% endif %}
     
+{% capture show_section %}{% case template.name %}
+  {% when 'index' %} {{ section.settings.enable_on_homepage }}
+  {% when 'collection' %} {{ section.settings.enable_on_collection_pages }}
+  {% when 'product' %} {{ section.settings.enable_on_product_pages }}
+{% endcase %}{% endcapture %}
+
+{{ section.settings.enable_on_homepage }}
+{{ template.name }}
+{{ show_section }}
+
+{% if show_section %}
       {% section 'product-benefit-block' %}
+  
+    {% endif %}
     </main>
 
 
